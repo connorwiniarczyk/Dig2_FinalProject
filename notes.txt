@@ -1,0 +1,3 @@
+notes:
+
+One of the inputs we specified for the Finite State Machine was named "new", this is a keyword in verilog and so we need to choose a new name for this wire. I have chosen the more descriptive newPassword, but this can be negotiated later
