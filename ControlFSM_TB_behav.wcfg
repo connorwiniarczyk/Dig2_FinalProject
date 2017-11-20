@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ControlFSM_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ControlFSM_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="50000000fs"></ZoomStartTime>
+      <ZoomEndTime time="70900002fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/ControlFSM_TB/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlFSM_TB/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlFSM_TB/enter" type="logic">
+      <obj_property name="ElementShortName">enter</obj_property>
+      <obj_property name="ObjectShortName">enter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlFSM_TB/newPassword" type="logic">
+      <obj_property name="ElementShortName">newPassword</obj_property>
+      <obj_property name="ObjectShortName">newPassword</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlFSM_TB/match" type="logic">
+      <obj_property name="ElementShortName">match</obj_property>
+      <obj_property name="ObjectShortName">match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlFSM_TB/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlFSM_TB/displayMode" type="array">
+      <obj_property name="ElementShortName">displayMode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">displayMode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlFSM_TB/buzzerMode" type="array">
+      <obj_property name="ElementShortName">buzzerMode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">buzzerMode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlFSM_TB/setPassword" type="logic">
+      <obj_property name="ElementShortName">setPassword</obj_property>
+      <obj_property name="ObjectShortName">setPassword</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlFSM_TB/dut/currentState" type="array">
+      <obj_property name="ElementShortName">currentState[2:0]</obj_property>
+      <obj_property name="ObjectShortName">currentState[2:0]</obj_property>
+   </wvobject>
+</wave_config>

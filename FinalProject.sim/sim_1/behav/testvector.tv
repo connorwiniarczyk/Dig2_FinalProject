@@ -1,0 +1,61 @@
+0000_00000
+
+//We should be in the base state by default, try pressing enter while holding match low, we should see the FSM move to the WRONG state for a clock cycle and then back to BASE
+10000_00000
+00000_00000
+00000_00000
+
+//reset so we're back in a known state
+01000_00000
+
+//Try pressing enter again, but this time with match set to high, should see move to CORRECT state for a clock cycle and then back to BASE
+10010_00000
+00000_00000
+00000_00000
+
+//reset so we're back in a known state
+01000_00000
+
+//In the BASE state, changing match shouldn't do anything while enter is low
+00010_00000
+00000_00000
+00010_00000
+00000_00000
+
+//reset so we're back in a known state
+01000_00000
+
+//In the BASE state, pressing newPassword should put us into the ECUR state
+00100_00000
+
+//ECUR, like BASE, is a stable state, meaning if there are no inputs to the system, it shouldn't change
+00000_00000
+00000_00000
+
+//Similarly, ECUR should not change if match changes without enter being pressed
+00010_00000
+00000_00000
+00010_00000
+00000_00000
+
+//If newPassword is pressed again, nothing should happen
+00100_00000
+00000_00000
+
+//If enter is pressed with match low, nothing should happen
+10000_00000
+00000_00000
+10000_00000
+
+//if enter is pressed when match is high, should move to NPASS state
+10010_00000
+
+//Again, the state should not change unless enter is pressed and the new password is valid (4 digits)
+00000_00000
+00010_00000
+00100_00000
+00110_00000
+10000_00000
+00001_00000
+00011_00000
+10001_00000
